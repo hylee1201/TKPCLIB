@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78B1B8A6-592B-4788-9D36-B2E94E8AC593}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TKPC.My.MyApplication</StartupObject>
+    <RootNamespace>TKPC</RootNamespace>
+    <AssemblyName>TKPC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>BooksOPY.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TKPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TKPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Documents.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Excel.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Shared.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.Misc.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\assembly\GAC_MSIL\Infragistics2.Win.UltraWinDataSource.v8.1\8.1.20081.1000__7dd5c3163f2cd0cb\Infragistics2.Win.UltraWinDataSource.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.DocumentExport.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinListBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinListView.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinSpellChecker.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SmoEnum, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\MemoDAL.vb" />
+    <Compile Include="Entity\MemoEnt.vb" />
+    <Compile Include="frmBarcodePurgeList.Designer.vb">
+      <DependentUpon>frmBarcodePurgeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBarcodePurgeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendarBarcode.Designer.vb">
+      <DependentUpon>frmCalendarBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendarBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemoAdd.Designer.vb">
+      <DependentUpon>frmMemoAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemoAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonReserve.Designer.vb">
+      <DependentUpon>frmPersonReserve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonReserve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAL\BarcodePrintDAL.vb" />
+    <Compile Include="DAL\ReserveBookDAL.vb" />
+    <Compile Include="Entity\BarcodePrintEnt.vb" />
+    <Compile Include="Entity\BookBarcodeEnt.vb" />
+    <Compile Include="DAL\BookDAL.vb" />
+    <Compile Include="DAL\PersonDAL.vb" />
+    <Compile Include="DAL\RentBookDAL.vb" />
+    <Compile Include="Entity\BookEnt.vb" />
+    <Compile Include="Entity\PersonEnt.vb" />
+    <Compile Include="Entity\RentBookEnt.vb" />
+    <Compile Include="Entity\ReserveBookEnt.vb" />
+    <Compile Include="frmAboutBox.Designer.vb">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackup.Designer.vb">
+      <DependentUpon>frmBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookAdd.Designer.vb">
+      <DependentUpon>frmBookAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookBarcodeAdd.Designer.vb">
+      <DependentUpon>frmBookBarcodeAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookBarcodeAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookFind.Designer.vb">
+      <DependentUpon>frmBookFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookRentHistory.Designer.vb">
+      <DependentUpon>frmBookRentHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookRentHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookReserve.Designer.vb">
+      <DependentUpon>frmBookReserve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookReserve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalculator.Designer.vb">
+      <DependentUpon>frmCalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendar.Designer.vb">
+      <DependentUpon>frmCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginAdd.Designer.vb">
+      <DependentUpon>frmLoginAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonRentHistory.Designer.vb">
+      <DependentUpon>frmPersonRentHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonRentHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRentList.Designer.vb">
+      <DependentUpon>frmRentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRentList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookList.Designer.vb">
+      <DependentUpon>frmBookList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonAdd.Designer.vb">
+      <DependentUpon>frmPersonAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonList.Designer.vb">
+      <DependentUpon>frmPersonList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRentAdd.Designer.vb">
+      <DependentUpon>frmRentAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRentAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRentPersonFind.Designer.vb">
+      <DependentUpon>frmRentPersonFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRentPersonFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarcodeMain.Designer.vb">
+      <DependentUpon>frmBarcodeMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBarcodeMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReserveList.Designer.vb">
+      <DependentUpon>frmReserveList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReserveList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnAdd.Designer.vb">
+      <DependentUpon>frmReturnAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturnAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fromBookReserveList.Designer.vb">
+      <DependentUpon>fromBookReserveList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fromBookReserveList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDITKPC.Designer.vb">
+      <DependentUpon>MDITKPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDITKPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="ssTKPC.Designer.vb">
+      <DependentUpon>ssTKPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ssTKPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKPCDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TKPCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\CytographyPassword.vb" />
+    <Compile Include="Utility\c_TextOnPaste.vb" />
+    <Compile Include="Utility\m_Common.vb" />
+    <Compile Include="Utility\m_Constant.vb" />
+    <Compile Include="Utility\m_DBUtil.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBarcodePurgeList.resx">
+      <DependentUpon>frmBarcodePurgeList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarBarcode.resx">
+      <DependentUpon>frmCalendarBarcode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemoAdd.resx">
+      <DependentUpon>frmMemoAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonReserve.resx">
+      <DependentUpon>frmPersonReserve.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackup.resx">
+      <DependentUpon>frmBackup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookAdd.resx">
+      <DependentUpon>frmBookAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookBarcodeAdd.resx">
+      <DependentUpon>frmBookBarcodeAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookFind.resx">
+      <DependentUpon>frmBookFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookRentHistory.resx">
+      <DependentUpon>frmBookRentHistory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookReserve.resx">
+      <DependentUpon>frmBookReserve.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalculator.resx">
+      <DependentUpon>frmCalculator.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendar.resx">
+      <DependentUpon>frmCalendar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginAdd.resx">
+      <DependentUpon>frmLoginAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonRentHistory.resx">
+      <DependentUpon>frmPersonRentHistory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRentList.resx">
+      <DependentUpon>frmRentList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookList.resx">
+      <DependentUpon>frmBookList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonAdd.resx">
+      <DependentUpon>frmPersonAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonList.resx">
+      <DependentUpon>frmPersonList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRentAdd.resx">
+      <DependentUpon>frmRentAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRentPersonFind.resx">
+      <DependentUpon>frmRentPersonFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarcodeMain.resx">
+      <DependentUpon>frmBarcodeMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReserveList.resx">
+      <DependentUpon>frmReserveList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnAdd.resx">
+      <DependentUpon>frmReturnAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromBookReserveList.resx">
+      <DependentUpon>fromBookReserveList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDITKPC.resx">
+      <DependentUpon>MDITKPC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ssTKPC.resx">
+      <DependentUpon>ssTKPC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Images\delete.jpg" />
+    <None Include="Images\exit.jpg" />
+    <None Include="Images\exit2.jpg" />
+    <None Include="Images\exit.png" />
+    <None Include="Images\excel.jpg" />
+    <None Include="Images\email.png" />
+    <None Include="Images\delete2.png" />
+    <Content Include="bible.ico" />
+    <Content Include="BooksOPY.ico" />
+    <Content Include="Images\Barcode Progress.png" />
+    <Content Include="Images\Barcode Scan 2.png" />
+    <Content Include="Images\Barcode Scan.png" />
+    <Content Include="Images\calculator.png" />
+    <Content Include="Images\calendar.png" />
+    <None Include="Images\copy.png" />
+    <None Include="Images\check.jpg" />
+    <Content Include="Images\GuideBack.bmp" />
+    <Content Include="Images\GuideBack1.bmp" />
+    <Content Include="Images\GuideBack2.bmp" />
+    <Content Include="Images\GuideBack3.bmp" />
+    <Content Include="Images\list.jpg" />
+    <Content Include="Images\new.jpg" />
+    <Content Include="Images\print.jpg" />
+    <None Include="Images\rent.jpg" />
+    <None Include="Images\reset.jpg" />
+    <None Include="Images\refresh.png" />
+    <Content Include="Images\Printer Check.png" />
+    <None Include="Images\rent.png" />
+    <None Include="Images\return.png" />
+    <None Include="Images\reserve.jpg" />
+    <Content Include="Images\save.jpg" />
+    <Content Include="Images\Shipping.png" />
+    <Content Include="Images\tool.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\tkpc2009.gif" />
+    <None Include="Resources\tkpc2009_04.gif" />
+    <None Include="Resources\bible-1.jpg" />
+    <None Include="Resources\booksamo.jpg" />
+    <None Include="Resources\tkpc.gif" />
+    <None Include="Images\tool2.png" />
+    <None Include="Resources\Shipping.bmp" />
+    <None Include="TKPCDataSet.xsc">
+      <DependentUpon>TKPCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TKPCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TKPCDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TKPCDataSet.xss">
+      <DependentUpon>TKPCDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
